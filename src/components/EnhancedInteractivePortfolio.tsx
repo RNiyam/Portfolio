@@ -133,7 +133,13 @@ function LandingSplash({ onEnter, isEntering }: { onEnter: () => void; isEnterin
                 transition={{ duration: 2, repeat: Infinity }}
                 className="absolute inset-0 rounded-full"
               />
-              <span className="text-5xl font-black text-white relative z-10">P</span>
+              <div className="absolute inset-0 rounded-full overflow-hidden flex items-center justify-center p-1">
+                <img
+                  src="/avatar.png"
+                  alt="R Niyam Avatar"
+                  className="w-full h-full object-cover rounded-full"
+                />
+              </div>
             </div>
           </div>
         </motion.div>
@@ -146,7 +152,7 @@ function LandingSplash({ onEnter, isEntering }: { onEnter: () => void; isEnterin
             transition={{ delay: 0.8, duration: 0.8 }}
             className="text-7xl md:text-9xl font-black text-white mb-2"
           >
-            Portfolio
+            R Niyam
           </motion.h1>
         </div>
 
@@ -156,7 +162,8 @@ function LandingSplash({ onEnter, isEntering }: { onEnter: () => void; isEnterin
           transition={{ delay: 1.2 }}
           className="text-xl md:text-2xl text-white/60 mb-12 font-light"
         >
-          Creative Developer & Designer
+          Software Engineer | React & React Native
+
         </motion.div>
 
         {/* Enter button */}
